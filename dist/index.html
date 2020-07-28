@@ -40,15 +40,15 @@
   </header>
   <main id="home">
     <section class="books">
-      <div class="book">
+      <a href="#" class="book">
         <img src="./img/books/ngisakhumbula-cover.JPG" alt="ngisakhumbula cover">
-      </div>
-      <div class="book">
+      </a href="#">
+      <a href="#" class="book">
         <img src="./img/books/ungawubasa-cover.JPG" alt="ungawubasa uzawotha cover">
-      </div>
-      <div class="book">
+      </a href="#">
+      <a href="#" class="book">
         <img src="./img/books/usakhula-cover.JPG" alt="ngakuthanda usakhula cover">
-      </div>
+      </a href="#">
     </section>
     <section class="home-section where">
       <div class="section-header">
@@ -90,7 +90,7 @@
       <div class="section-header">
         <span class="line"></span><h1 class="section-heading">Looking for something?</h1><span class="line"></span>
       </div>
-      <form action="#" name="find">
+      <form action="#" name="find" class="find">
         <input type="search" class="form-control" name="search" id="search" placeholder="Search this website" />
         <input type="submit" class="btn btn-sm btn-primary" value="Search">
       </form>
@@ -108,19 +108,20 @@
           Reprehenderit saepe officia, tempora fuga deserunt quasi fugiat pariatur temporibus quaerat blanditiis!
         </p>
       </article>
-      <form method="post" action="contact-form-handler.php" name="message">
+      <form method="post" action="contact-form-handler.php" name="message" id="message">
+        <h2 class="form-heading">FEEL FREE TO LEAVE A MESSAGE:</h2>
         <!--name -->
         <div class="form-group">
-          <label for="name">Please provide your name</label>
+          <label for="name">Your Name:</label>
           <input type="text" name="name" id="name" class="form-control" placeholder="Jon Doe" />
         </div><!--name end-->
         <!-- email -->
         <div class="form-group">
-          <label for="email">Enter your email address</label>
+          <label for="email">Email Address:</label>
           <input type="email" name="email" id="email" class="form-control" placeholder="example@mail.com" required />          
         </div><!--email end-->
         <div class="form-group">
-          <textarea name="comment" id="comment" class="form-control" placeholder="Your message here..." required></textarea>
+          <textarea name="comment" id="comment" class="form-control init" placeholder="Your message here..." required></textarea>
         </div><!--email end-->
         <div class="form-group cta">
           <input type="submit" class="btn btn-primary btn-lg submit"​ value="Send" />
@@ -150,5 +151,6 @@
       Designed and built by <a href="#">iamndlovu</a>
     </section>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 </html>
