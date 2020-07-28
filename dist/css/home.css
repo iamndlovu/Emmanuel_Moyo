@@ -1,0 +1,38 @@
+@import './bootstrap.min.css';
+@import './home-header.css';
+@import './home-main.css';
+@import './home-responsive.css';
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 2rem;
+}
+
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lg-heading
+{
+    font-size: 6rem;
+}
+
+.sm-heading
+{
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: 300;
+}

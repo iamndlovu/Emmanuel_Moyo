@@ -1,0 +1,46 @@
+header
+{
+    padding-top: 20vh;
+}
+
+header .intro
+{
+    flex-direction: column;
+}
+
+header h1, header h2
+{
+    margin: -2px 1px;
+}
+
+header .social.center
+{
+    justify-content: flex-end;
+    padding-right: 3rem;
+    margin: 4rem 0;
+}
+
+header .icons a
+{
+    width: 100%;
+    margin-left: 1.4rem;
+}
+
+header ul
+{                                                                                                                 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3rem 6rem 3rem;
+}
+
+header li
+{
+    background: #282828;
+    color: whitesmoke;
+    line-height: 2rem;
+    flex-basis: 9rem;
+    margin-bottom: 1rem;
+}
