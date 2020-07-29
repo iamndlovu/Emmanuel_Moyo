@@ -24,6 +24,11 @@ body
     justify-content: center;
 }
 
+.column
+{
+    flex-direction: column;
+}
+
 .lg-heading
 {
     font-size: 6rem;

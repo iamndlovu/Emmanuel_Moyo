@@ -37,10 +37,9 @@ header ul
     margin: 0 3rem 6rem 3rem;
 }
 
-header li
+header ul a.btn
 {
-    background: #282828;
-    color: whitesmoke;
+    font-size: 2rem;
     line-height: 2rem;
     flex-basis: 9rem;
     margin-bottom: 1rem;

@@ -25,6 +25,53 @@ main .book
     height: 100%;
 }
 
+main .where
+{
+    margin-bottom: 5rem;
+    flex-direction: column;
+}
+
+main .store-icons
+{
+    width: 70rem;
+    margin: 3rem 0;
+    justify-content: space-evenly;
+}
+
+main .store-icon
+{
+   /* background: #232323;*/
+    flex-basis: 9rem;
+}
+main .sec
+{
+    justify-content: space-between;
+}
+
+main .compliment, main .newsletter
+{
+    background: silver;
+    color: black;
+    padding: 9px;
+    width: 45%;
+}
+
+main .compliment-text
+{
+    text-align: left;
+}
+
+main .signup
+{
+    align-items: flex-end;
+    padding-right: 16px;
+}
+
+main .signup-text
+{
+    text-align: right;
+}
+
 main .section-header
 {
     display: flex;
@@ -44,6 +91,11 @@ main .line
 #message
 {
     margin: 5rem 0;
+}
+
+main .search
+{
+    margin-top: 5rem;
 }
 
 main form
@@ -87,4 +139,20 @@ main textarea.form-control
 main textarea.form-control.init 
 {
     font-size: 1.7rem;
+}
+
+main .potrait
+{
+    height: 20rem;
+    margin: 2rem;
+}
+
+.potrait img
+{
+    height: 100%;
+}
+
+.bio-text span
+{
+    height: 20rem;
 }
