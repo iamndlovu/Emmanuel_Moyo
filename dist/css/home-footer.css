@@ -1,0 +1,43 @@
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 6rem 1rem 1rem 1rem;
+    color: aliceblue;
+    background: #232323;
+}
+
+footer section
+{
+    flex-basis: 50%;
+}
+
+footer .social
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+footer .icons
+{
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+footer .copy
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .credit
+{
+    background: whitesmoke;
+    margin-top: 4rem;
+    color: #232323;
+}
