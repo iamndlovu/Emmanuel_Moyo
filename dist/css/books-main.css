@@ -1,0 +1,50 @@
+main .books
+{
+    padding: 2rem;
+}
+
+main .book
+{
+    display: grid;
+    grid-gap: 9px;
+    grid-template-columns: repeat(100, 1fr);
+    grid-auto-rows: 100%;
+    background: wheat;
+}
+
+main .book-description
+{
+    background: darkcyan;
+}
+
+.book-description.left
+{
+    grid-column: 1/65;
+}
+
+.book-description.right
+{
+    grid-column: 38/-1;
+}
+
+main .book-cover
+{
+    background: cornflowerblue;
+}
+
+.book-cover.right
+{
+    grid-column: 65/-1;
+}
+
+.book-cover.left
+{
+    grid-column: 1/38;
+    overflow: hidden;
+}
+
+main .book-links
+{
+    background: rebeccapurple;
+    grid-column: 1/-1;
+}
