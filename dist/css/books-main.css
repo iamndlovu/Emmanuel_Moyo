@@ -1,20 +1,26 @@
 main .books
 {
     padding: 2rem;
+    margin: 6rem 0;
 }
 
 main .book
 {
     display: grid;
-    grid-gap: 9px;
+    grid-column-gap: 9px;
+    grid-row-gap: 4rem;
     grid-template-columns: repeat(100, 1fr);
     grid-auto-rows: 100%;
-    background: wheat;
+    margin-bottom: 4.3rem;
+    padding-bottom: 4.3rem;
+    border-bottom: 3px solid #232323;
+    overflow: hidden;
 }
 
 main .book-description
 {
-    background: darkcyan;
+    justify-content: space-around;
+    grid-row: 1/2;
 }
 
 .book-description.left
@@ -26,10 +32,9 @@ main .book-description
 {
     grid-column: 38/-1;
 }
-
 main .book-cover
 {
-    background: cornflowerblue;
+    grid-row: 1/2;
 }
 
 .book-cover.right
@@ -43,8 +48,21 @@ main .book-cover
     overflow: hidden;
 }
 
+.book-cover img
+{
+    width: 100%;
+}
+
 main .book-links
 {
-    background: rebeccapurple;
     grid-column: 1/-1;
+    list-style: none;
+    padding-left: auto 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main .book-link
+{
+    flex-basis: 6rem;
 }
