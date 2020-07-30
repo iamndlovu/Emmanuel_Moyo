@@ -40,7 +40,6 @@ main .store-icons
 
 main .store-icon
 {
-   /* background: #232323;*/
     flex-basis: 9rem;
 }
 main .sec
@@ -80,14 +79,6 @@ main .section-header
     justify-content: center;
 }
 
-main .line
-{
-    height: 2px;
-    margin: 0.5rem;
-    flex-basis: 30%;
-    background: #23232373;
-}
-
 #message
 {
     margin: 5rem 0;
@@ -98,9 +89,9 @@ main .search
     margin-top: 5rem;
 }
 
-main form
+main form, main form#message
 {
-    margin: 4rem 1rem;
+    margin: 4rem 2rem;
 }
 
 form.find
@@ -136,7 +127,7 @@ main textarea.form-control
     height: 20vw;
 }
 
-main textarea.form-control.init 
+main .form-control.init 
 {
     font-size: 1.7rem;
 }

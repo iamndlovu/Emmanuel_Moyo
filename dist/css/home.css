@@ -1,45 +1,6 @@
 @import './bootstrap.min.css';
-@import './home-header.css';
+@import './universal.css';
+@import './header.css';
 @import './home-main.css';
-@import './home-footer.css';
+@import './footer.css';
 @import './home-responsive.css';
-
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body
-{
-    font-size: 2rem;
-}
-
-.center
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.column
-{
-    flex-direction: column;
-}
-
-.lg-heading
-{
-    font-size: 6rem;
-}
-
-.sm-heading
-{
-    font-size: 1.6rem;
-}
-
-h1, h2, h3, h4, h5, h6
-{
-    font-weight: 400;
-}

@@ -1,0 +1,48 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 2rem;
+}
+
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column
+{
+    flex-direction: column;
+}
+
+.lg-heading
+{
+    font-size: 6rem;
+}
+
+.sm-heading
+{
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: 400;
+}
+
+.line
+{
+    height: 3px;
+    margin: 0.5rem;
+    flex-basis: 30%;
+    background: #23232373;
+}
+
