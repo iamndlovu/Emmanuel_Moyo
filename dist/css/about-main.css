@@ -1,0 +1,47 @@
+main .potrait
+{
+    margin: 5rem 2rem;
+    height: 40rem;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 85%;
+}
+
+.potrait img
+{
+    height: 100%;
+}
+
+main .bio
+{
+    margin: 4rem 0;
+}
+
+main .bio-text
+{
+    margin: 0 2rem 1.3rem 2rem;
+}
+
+main .newsletter
+{
+    background: #23232353;
+    margin: 2rem 25%;
+    padding: 2rem 1rem 5rem 1rem;
+}
+
+main .newsletter-text
+{
+    margin: 2rem 0;
+}
+
+main label
+{
+    font-size: 1.2rem;
+}
+
+main .form-control
+{
+    width: 70%;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
