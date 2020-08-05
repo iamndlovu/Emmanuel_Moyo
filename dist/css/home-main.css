@@ -132,6 +132,11 @@ main .form-control.init
     font-size: 1.7rem;
 }
 
+main .bio-text
+{
+    flex-wrap: wrap;
+}
+
 main .potrait
 {
     height: 20rem;

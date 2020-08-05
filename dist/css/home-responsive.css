@@ -35,16 +35,31 @@
 
     html body
     {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     body .lg-heading
     {
         font-size: 2.7rem;
     }
 
+    body .section-header h1
+    {
+        font-size: 1.6rem; 
+    }
+
     body h1
     {
-        font-size: 2rem; 
+        font-size: 2rem;
+    }
+
+    body h2
+    {
+        font-size: 1.5rem;
+    }
+
+    body h3
+    {
+        font-size: 1.37rem;
     }
     
     div span.line
@@ -106,6 +121,32 @@
         flex-basis: 5rem;
     }
 
-   
+    body main form, body main form#message
+    {
+        margin: 4rem 0.32rem;
+    }
+
+    body main form.find 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body main form input.form-control, body main form div.form-group
+    {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    body main form .form-group textarea.form-control 
+    {
+        width: 91vw;
+        height: 45.5vw;
+    }
+
+    .bio-text span
+    {
+        height: 100%;
+    }
 
  }
