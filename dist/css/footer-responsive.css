@@ -1,0 +1,30 @@
+@media screen and (max-width: 1015px)
+{
+    body footer 
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    body footer .social
+    {
+        flex-basis: 100%;
+    }
+
+    body footer .icons
+    {
+        justify-content: space-between;
+    }
+
+    body footer .copy
+    {
+        justify-content: flex-end;
+        flex-basis: 100%;
+    }
+
+    body footer .credit
+    {
+        font-size: 1.3rem
+    }
+
+}
