@@ -24,6 +24,11 @@ footer .social
     justify-content: center;
 }
 
+footer .social a
+{
+    color: #ffffff;
+}
+
 footer .icons
 {
     width: 35%;
