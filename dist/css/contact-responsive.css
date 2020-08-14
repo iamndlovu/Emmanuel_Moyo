@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) 
+{
+  main .contact-boxes
+  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 8rem;
+    margin: 5rem 0.2rem;
+  }
+
+  main h2
+  {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  main h2.sub
+  {
+     margin-top: 3rem;
+  }
+
+  body main form#message
+  {
+    margin: 4rem 0.32rem;
+  }
+
+  body main form input.form-control, body main form div.form-group
+  {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  body main form .form-group textarea.form-control 
+  {
+    width: 91vw;
+    height: 45.5vw;
+  }
+
+}
