@@ -11,6 +11,17 @@
  /*tablets and small laptops*/
 @media screen and (max-width: 768px) 
 {
+    main#home .where .store-icons
+    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    main#home .where .store-icons .store-icon
+    {
+        flex-basis: 5rem;
+    }
+
     main#home .home-section.sec
     {
         flex-direction: column;
@@ -70,16 +81,6 @@
         padding-right: 0px;
     }
 
-    main#home .where .store-icons
-    {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    main#home .where .store-icons .store-icon
-    {
-        flex-basis: 5rem;
-    }
 
     .bio-text span
     {
