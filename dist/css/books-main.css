@@ -55,7 +55,6 @@ main
 
 .container
 {
-  background: #15202b;
   transform: translate(0, -100%);
   opacity: 0;
   z-index: -3;
@@ -68,4 +67,115 @@ main
   transform: translate(0, 0);
   opacity: 1;
   z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.84rem;
+}
+
+/*book*/
+.container.show img
+{
+  border: #15202b 5px solid;
+  flex-basis: 17rem;
+  margin-bottom: 0.84rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.container.show img:hover
+{
+  border: #15202b 1px solid;
+  z-index: 11;
+}
+
+.book
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: #15202b;
+  color: #ffffff;
+  opacity: 0.98;
+  padding: 9px;
+
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(50, 2%);
+  gap: 10px;
+}
+
+.book-title
+{
+  grid-row: 1 / 4;
+  grid-column: 1 / -1;
+}
+
+.book-tags
+{
+  grid-row: 4 / 6;
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag.bagde.badge-warning
+{
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.summary
+{
+  grid-row: 7 / 30;
+  grid-column: 1 / 14;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.book i
+{
+  grid-row: 7 / 30;
+  grid-column: 14 / -1;
+  margin-right: 9px;
+}
+
+.book img
+{
+  height: 100%;
+  width: 99.8%;
+}
+
+.book-links
+{
+  grid-row: 31 / -1;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-link
+{
+  margin-right: 1rem;
+}
+
+.close.btn
+{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+
+  border-radius: 50%;
+  color: #ffffff;
+  opacity: 1;
 }
