@@ -1,6 +1,6 @@
 # EMMANUEL MOYO
 #
-# Personal website of Emmanuel Moyo an Auther
+# Personal website of Emmanuel Moyo an Author
 #
 # USED
 #
@@ -8,4 +8,4 @@
 #   CSS
 #   HTML
 #
-#Developed By @iamndlovu
+# Developed By @iamndlovu
