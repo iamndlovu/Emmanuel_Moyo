@@ -78,7 +78,7 @@ main
 .container.show img
 {
   border: #15202b 5px solid;
-  flex-basis: 17rem;
+  width: 15rem;
   margin-bottom: 0.84rem;
   cursor: pointer;
   transition: all 0.5s ease-out;
@@ -92,16 +92,16 @@ main
 
 .book
 {
-  position: fixed;
+  /*position: fixed;
   top: 0;
-  left: 0;
-  z-index: 10;
-  height: 100%;
+  left: 0;*/
+  height: 100vh;
   width: 100%;
   background: #15202b;
   color: #ffffff;
   opacity: 0.98;
-  padding: 9px;
+  padding: 3rem 9px;
+  overflow: hidden;
 
   display: grid;
   grid-template-columns: repeat(20, 1fr);
@@ -117,7 +117,7 @@ main
 
 .book-tags
 {
-  grid-row: 4 / 6;
+  grid-row: 4 / 8;
   grid-column: 1 / -1;
 
   display: flex;
@@ -135,15 +135,15 @@ main
 
 .summary
 {
-  grid-row: 7 / 30;
+  grid-row: 8 / 30;
   grid-column: 1 / 14;
   font-size: 1.5rem;
   overflow: hidden;
 }
 
-.book i
+.book .book-cover-img
 {
-  grid-row: 7 / 30;
+  grid-row: 8 / 30;
   grid-column: 14 / -1;
   margin-right: 9px;
 }
@@ -157,7 +157,7 @@ main
 .book-links
 {
   grid-row: 31 / -1;
-  grid-column: 1 / -1;
+  grid-column: 1 / 14;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,6 +166,9 @@ main
 .book-link
 {
   margin-right: 1rem;
+  position: absolute;
+  width: 5rem;
+  bottom: 1rem;
 }
 
 .close.btn

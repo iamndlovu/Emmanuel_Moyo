@@ -21,14 +21,14 @@ class Book {
     const book = document.createElement('div'),
           bookTitle = `<section class=\"book-title\"><i/><h3>${this.title}</h3></section>`,
           bookSummary = `<article class=\"summary\">${this.summary}</article>`,
-          bookCover = `<img src=\"img\/books\/${this.hash}\" title=\"${this.title}\" alt=\"${this.title} cover photo\"></img>`,
+          bookCover = `<i class=\"book-cover-img\"><img src=\"img\/books\/${this.hash}\" title=\"${this.title}\" alt=\"${this.title} cover photo\"></i>`,
           bookLinks = document.createElement('section'),
           bookTags = document.createElement('section'),
           cancelBtn = document.createElement('div');
 
     this.links.forEach(link => {
       const {href, classList} = link;
-      const linkEl = `<a href=\"${href}\"  class=\"book-link btn btn-dark\"><i class\"${classList}\" /></a>`;
+      const linkEl = `<a href=\"${href}\"  class=\"book-link btn btn-info\"><i class=\"${classList}\"></a>`;
       bookLinks.innerHTML += linkEl;
     });
 
@@ -39,14 +39,14 @@ class Book {
 
     bookTags.className = 'book-tags';
     bookLinks.className = 'book-links';
-    let bookContents = bookTitle + bookSummary + bookCover;
     cancelBtn.className = 'close btn btn-danger';
     cancelBtn.textContent = 'X';
     cancelBtn.addEventListener('click', () => this.unmountBook(this));
 
-    book.innerHTML = bookContents;
-    book.appendChild(bookLinks);
+    book.innerHTML += bookTitle;
     book.appendChild(bookTags);
+    book.innerHTML += bookCover + bookSummary;
+    book.appendChild(bookLinks);
     book.appendChild(cancelBtn);
     book.className = 'book';
     return book;
@@ -63,11 +63,13 @@ class Book {
   }
 
   mountBook(book) {
+    elements.forEach(element => document.body.removeChild(element));
     document.body.appendChild(book.DOMEl);
     console.log(`mounted book ${book.title}`);
   }
 
   unmountBook(book) {
+    elements.forEach(element => document.body.appendChild(element));
     document.body.removeChild(book.DOMEl);
     console.log(`unmounted book ${book.title}`);
   }

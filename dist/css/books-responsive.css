@@ -1,0 +1,25 @@
+@media screen and (max-width: 500px) 
+{
+  body div.book
+  {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.book .book-tags
+  {
+    margin-bottom: 1rem;
+  }
+
+  .book-links
+  {
+    margin-bottom: 4rem;
+  }
+
+  .book-link
+  {
+    position: relative;
+  }
+}

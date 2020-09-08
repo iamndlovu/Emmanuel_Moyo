@@ -31,7 +31,6 @@ function toggleBooks(e) {
       if (booksContainer.id == 'ndebele') ndebeleBooks.forEach(book => book.unmountPic());
      else if (booksContainer.id == 'english') englishBooks.forEach(book => book.unmountPic());
     }, 50);
-    //emahlukanandlela.unmount();
   } else {
     booksContainer.classList.add('show');
     icon.classList.add('show');
@@ -40,6 +39,5 @@ function toggleBooks(e) {
       if (booksContainer.id == 'ndebele') ndebeleBooks.forEach(book => book.mountPic());
      else if (booksContainer.id == 'english') englishBooks.forEach(book => book.mountPic());
     }, 400);
-    //emahlukanandlela.mount();
   }
 }

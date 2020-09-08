@@ -1,0 +1,1 @@
+const elements = [document.getElementsByTagName('header')[0], document.querySelector('main'), document.querySelector('footer')];
