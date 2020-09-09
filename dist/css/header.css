@@ -28,6 +28,11 @@ header .social a
     color: #333;
 }
 
+header .social a:hover
+{
+    color: #17a2b8;
+}
+
 header .icons a
 {
     width: 100%;
