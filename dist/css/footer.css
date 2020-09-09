@@ -27,6 +27,12 @@ footer .social
 footer .social a
 {
     color: #ffffff;
+    transition: all 0.5s ease-out;
+}
+
+footer .social a:hover
+{
+    color: #17a2b8;
 }
 
 footer .icons
